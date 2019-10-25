@@ -1,3 +1,4 @@
+
 #include <LiquidCrystal.h>
 
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
@@ -138,7 +139,7 @@ void showMonkey() {
 }
 
 void shuffleTraps() {
-    if (millis() - last_change > 3000) {
+    if (millis() - last_change > 1000) {
         for (int i = 0; i < 14; i++) {
             if (i==0 || i == 2 || i == 5 || i == 9) {
                 continue;
@@ -196,7 +197,7 @@ bool validMovement(Movement movement) {
         }
     } else {
         int new_pos = monkey_pos[1] + d;
-        if (new_pos >= 0 || new_pos <= 1) {
+        if (new_pos >= 0 && new_pos <= 1) {
             return true;
         }
     }
@@ -245,9 +246,6 @@ void tryMovement() {
         if (validMovement(movement)) {
             moveMonkey(movement);
             last_movement = millis();
-            if (isTraped()) {
-                moveTiger(monkey_pos[1]);
-            }
         }
     }
 }
@@ -306,6 +304,9 @@ void loop() {
         updateTime();
         renderAll();
         tryMovement();
+        if (isTraped()) {
+            moveTiger(monkey_pos[1]);
+        }
         shuffleTraps();
         delay(125);
     }
