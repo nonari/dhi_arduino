@@ -19,9 +19,13 @@ volatile unsigned int n = 0;
 // Current signal value
 volatile float x;
 
+// Array to store the signal function pointers
 void (*functions[6])();
-unsigned int current_signal = 0;
-unsigned long since_change = 0;
+// Current signal being ploted
+volatile unsigned int current_signal = 0;
+// Time elapsed since last signal switch
+volatile unsigned long since_change = 0;
+// Time to switch between signals
 const unsigned long SHIFT_TIME = 5000;
 
 void setup() {  
