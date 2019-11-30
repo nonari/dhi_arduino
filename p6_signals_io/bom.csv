@@ -1,7 +1,7 @@
-Quantity,Component
-1," Arduino Uno R3"
-2," Potentiometer"
-1," Protoboard"
-3," Buttons"
-2," 470nF Capacitor"
-2," 10kΩ Resistor"
+Component, Quantity
+" Arduino Uno R3 ", 1
+" Protoboard ", 1
+" Potentiometer ", 2
+" Buttons ", 3
+" 470nF Capacitor ", 2 
+" 10kΩ Resistor ", 2
