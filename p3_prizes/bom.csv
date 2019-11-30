@@ -1,8 +1,8 @@
 Component, Quantity
-" Arduino Uno R3", 1
-" LCD 16 x 2", 1
-" I/O Expander PCF8574A", 1
-" LEDs", 4
-" 100 Ω Resistor", 4
+"Arduino Uno R3", 1
+"LCD 16 x 2", 1
+"I/O Expander PCF8574A", 1
+"LEDs", 4
+"100Ω Resistor", 4
 "Button", 1
-"10 kΩ Resistencia", 1
+"10kΩ Resistencia", 1
