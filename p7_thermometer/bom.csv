@@ -1,7 +1,7 @@
 Quantity,Component
-1," Arduino Uno R3"
-1," Protoboard"
-2," 4 Digit display HS420561K/CPS03641A"
-1," Temperature sensor MCP9700/TMP36"
-1," 470nF Capacitor"
-4," 100Ω Resistor"
+" Arduino Uno R3 ", 1
+" Protoboard ", 1
+" 4 Digit Display HS420561K/CPS03641A ", 1
+" Temperature Sensor MCP9700/TMP36 ", 1
+" 470nF Capacitor ", 1
+" 100Ω Resistor ", 1
